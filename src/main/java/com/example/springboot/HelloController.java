@@ -10,9 +10,12 @@ public class HelloController {
 	@Value( "${spring.default.welcomeMessage}" )
 	private String welcomeMessage;
 
+	@Value("${spring.profiles.active}")
+	private String activeProfile;
+
 	@GetMapping("/")
 	public String index() {
-		return "Hello World " + welcomeMessage;
+		return "Hello World " + "from " + activeProfile;
 	}
 
 }
