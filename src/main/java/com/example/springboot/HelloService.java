@@ -2,5 +2,5 @@ package com.example.springboot;
 
 public interface HelloService {
 
-    String getWelcomeMessage();
+    String getWelcomeMessage(String from , String to , String message);
 }
