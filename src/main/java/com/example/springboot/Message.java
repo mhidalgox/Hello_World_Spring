@@ -1,5 +1,8 @@
 package com.example.springboot;
 
+/**
+ * Entity class for Message Pojo
+ */
 public class Message {
 
     private int id;
