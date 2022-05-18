@@ -12,9 +12,15 @@ import java.util.Arrays;
 public class Application {
 
 	public static void main(String[] args) {
+		// STarts the Spring Boot appl
 		SpringApplication.run(Application.class, args);
 	}
 
+	/**
+	 * Prints the bean names provided by Spring boot
+	 * @param ctx
+	 * @return
+	 */
 	@Bean
 	public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
 		return args -> {
