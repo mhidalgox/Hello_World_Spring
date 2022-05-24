@@ -25,6 +25,6 @@ public class HelloProdServiceImpl implements HelloService{
      */
     @Override
     public String getWelcomeMessage() {
-        return welcomeMessage + " from " + this.getClass().getName();
+        return "Hello world " + welcomeMessage + " from " + this.getClass().getSimpleName();
     }
 }

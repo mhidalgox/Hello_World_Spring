@@ -25,6 +25,6 @@ public class HelloDevServiceImpl implements  HelloService{
      */
     @Override
     public String getWelcomeMessage() {
-        return welcomeMessage + " from " + this.getClass().getName();
+        return "Hello world " + welcomeMessage + this.getClass().getSimpleName();
     }
 }
