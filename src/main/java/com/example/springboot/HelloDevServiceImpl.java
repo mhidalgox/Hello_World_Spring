@@ -33,6 +33,6 @@ public class HelloDevServiceImpl implements  HelloService{
         pojo.setTo(to);
         pojo.setId(counter);
         counter++;
-        return welcomeMessage + " from " + this.getClass().getName()+" " + pojo;
+        return "Hello world " + welcomeMessage + " from " + this.getClass().getSimpleName()+" " + pojo;
     }
 }
